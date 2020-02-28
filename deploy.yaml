@@ -17,7 +17,7 @@ spec:
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: production-microservice
-        image: ${REPOSITORY_TAG}
+        image: <<YOUR_DOCKERHUB_USERNAME>>/<<SERVICE_NAME>>:<<BUILD_ID>>
         imagePullPolicy: Never
         readinessProbe:
           httpGet:
